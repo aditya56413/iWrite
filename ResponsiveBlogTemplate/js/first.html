@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iWrite</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            background: #07252d;
+        }
+        h2{
+            position: relative;
+            font-size: 6em;
+            letter-spacing: 15px;
+            color: #0e3742;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            line-height: 0.70cm;
+            outline: none;
+            animation: animate 5s linear infinite;
+        }
+        
+        @keyframes animate{
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+                color: #0e3742;
+                box-shadow: none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+                color: #fff;
+                box-shadow: 0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4;
+            }
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 20px;
+            padding: 20px;
+            font-size: 17px;
+        }
+        a{
+            text-decoration:none;
+        }
+        .heading{
+            border: 2px solid black;
+            float: right;
+            border-radius: 500px;
+            background-color: rgb(245, 210, 16);
+            padding: 12px 20px;
+        } 
+         .signin{
+            padding: 5px 20px 15px 20px;
+            text-align: right;
+        }
+        section{
+            position: absolute;
+            top: 75%;
+            left: 71%;
+            font-size: small;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="/img/logo write 3.png" width="94px" alt=""></span>
+            </a>
+        </div>
+    </nav>
+    <h2 contenteditable="true">Personal diary</h2>
+    <!-- <h4>Where, iWrite</h4> -->
+    
+        <section class="up">
+            <h2 class="signin"><a href="contact.html" target="blank">Sign in</a></h2>
+        </section>
+        <hr>
+        <hr>
+        <section class="down">
+            <p><div class="contributor"><a href="/js/contributor.html" target="blank"><h1>Contributor</h1></a></div></p>
+            <p><div class="visitor"><a href="index.html" target="blank"><h1>Visitor</h1></a></div></p>
+        </section>
+</body>
+</html>
